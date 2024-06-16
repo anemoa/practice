@@ -14,7 +14,7 @@ function solution3(n){
 //   var half = Math.floor(n/2);
 //   return half*(half+1);
 // } 더 줄이면 이렇게도 된다고 한다.
-solution3(4);
+// solution3(4);
 
 
 // 두 수의 합
@@ -29,13 +29,16 @@ function solution(num1, num2) {
 
 // 나머지 몫 구하기
 
-function solution2(num1, num2){
-  let answer = 0;
-  answer = Math.floor(num1 / num2);
+// function solution2(num1, num2){
+//   let answer = 0;
+//   answer = Math.floor(num1 / num2);
 
-  return console.log(answer);
+//   return console.log(answer);
 
-}
+// }
 
-solution2(10, 5);
-solution2(7, 2);
+// solution2(10, 5);
+// solution2(7, 2);
+
+
+// 
