@@ -57,16 +57,43 @@ console.log(numRight(16));
 
 
 // 약수 구하기
-const yak = (n) => {
-  let answer = [];
+// const yak = (n) => {
+//   let answer = [];
 
+//   for(i = 1; i <= n; i++){
+//     if(n % i === 0){
+//       answer.push(i);
+//     }
+//   }
+
+//   return console.log(answer);
+// };
+
+// yak(29);
+
+
+// 짝수는 싫어요
+
+function no2n(n) {
+  var answer = [];
+  
   for(i = 1; i <= n; i++){
-    if(n % i === 0){
-      answer.push(i);
-    }
-  }
-
+      if(i % 2 !== 0){
+          answer.push(i);
+      }
+  }    
   return console.log(answer);
-};
+}
 
-yak(29);
+no2n(10);
+no2n(15);
+
+// 다른 사람이 작성한 코드
+
+function no2n2(n) {
+  var answer = [];
+
+  for (let i = 1; i<=n; i+=2) answer.push(i);
+
+  return answer;
+}
