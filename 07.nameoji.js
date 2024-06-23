@@ -40,4 +40,17 @@ console.log(numRight(16));
 // 이건 다른 사람이 작성한 식인데 훨씬 줄여서 썼다.
 // function solution(n) {
 //   return Number.isInteger(Math.sqrt(n)) ? 1 : 2;
-// } 
+// }
+
+
+// 편지
+
+const letter = (message) => {
+  let answer = 0;
+  let space = message.length;
+  answer = space * 2;
+
+  return console.log(answer);
+}
+
+letter('I love you~');
