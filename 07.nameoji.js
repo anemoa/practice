@@ -45,12 +45,28 @@ console.log(numRight(16));
 
 // 편지
 
-const letter = (message) => {
-  let answer = 0;
-  let space = message.length;
-  answer = space * 2;
+// const letter = (message) => {
+//   let answer = 0;
+//   let space = message.length;
+//   answer = space * 2;
+
+//   return console.log(answer);
+// }
+
+// letter('I love you~');
+
+
+// 약수 구하기
+const yak = (n) => {
+  let answer = [];
+
+  for(i = 1; i <= n; i++){
+    if(n % i === 0){
+      answer.push(i);
+    }
+  }
 
   return console.log(answer);
-}
+};
 
-letter('I love you~');
+yak(29);
