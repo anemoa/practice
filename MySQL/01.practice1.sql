@@ -16,3 +16,27 @@ orders 테이블의 book_id 컬럼은 books 테이블의 book_id와 관계를 �
 */
 
 
+CREATE TABLE authors(
+	 author_id INT NOT NULL PRIMARY KEY,
+     first_name VARCHAR(50),
+     last_name VARCHAR(50),
+     email VARCHAR(50)
+);
+
+CREATE TABLE books(
+	book_id INT NOT NULL PRIMARY KEY,
+    title VARCHAR(100),
+    author_id INT,
+    publication_date DATE,
+	FOREIGN KEY (author_id) REFERENCES authors(author_id) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE orders(
+	order_id INT NOT NULL PRIMARY KEY,
+    book_id INT,
+    customer_name VARCHAR(50),
+    order_date DATE,
+    FOREIGN KEY (book_id) REFERENCES books(book_id) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+DESC orders;
