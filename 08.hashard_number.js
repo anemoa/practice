@@ -21,3 +21,10 @@ console.log(hashard(18));
 // split(" "): 단어별로 끊어 준다
 // split(""): 글자 하나 하나씩 끊어 준다
 
+
+const phoning = (phone) => {
+    let answer = '';
+
+};
+
+console.log(phoning(222223333));
