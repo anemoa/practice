@@ -10,8 +10,15 @@
     <div>
         <span> id는 <%= userInfo.id %> 님</span>
         <p>비밀번호는 <%= userInfo.pw %> 네요</p>
-        <p>이메일은 <%= userInfo.email %></p>
-        <p>학년은 <%= userInfo.grade2 %>년!!</p>
+        <% if(userInfo.email){ %>
+            <p>이메일은 <%= userInfo.email %></p>
+        <% } %>
+        
+        <% if(userInfo.grade2){ %>
+            <p>학년은 <%= userInfo.grade2 %>년!!</p>
+        <% } %>    
     </div>
+
+    <a href="/">홈으로 돌아가</a>
 </body>
 </html>

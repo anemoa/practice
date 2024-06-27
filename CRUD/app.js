@@ -27,12 +27,15 @@ app.get('/', (req, res) => {
 app.get('/getForm', (req, res) => {
     console.log(req.query);
     res.render('result', {title: 'GET 요청 결과', userInfo: req.query});
-    
+
 });
 // get은 req의 query를 받는다
 
 
-
+app.post('/postForm', (req, res) => {
+    console.log(req.body);
+    res.render('result', {title: 'POST 요청결과', userInfo: req.body});
+})
 // post는 req의 body를 받는다.
 
 
