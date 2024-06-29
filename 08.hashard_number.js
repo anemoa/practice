@@ -23,8 +23,15 @@ console.log(hashard(18));
 
 
 const phoning = (phone) => {
-    let answer = '';
+    
+  // 번호 뒷 4자리 판별
+  let phone4 = phone.substr(-4, 5);
+  console.log(phone4);
+
+  // 뒷 4자리 제외한 앞 숫자 전부 가져오기
+  let frontNum = phone.substring(0, phone.length - 4);
+  console.log(frontNum);
 
 };
 
-console.log(phoning(222223333));
+phoning('2323665555');
