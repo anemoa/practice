@@ -82,3 +82,23 @@ function ageNum(age){
 }
 
 ageNum(28);
+
+// 머쓱이보다 키 큰 사람 구하기
+
+function muss(array, height){
+  let answer = 0;
+  console.log(array.length);
+
+  for(i = 0; i < array.length; i++){
+    if( array[i] > height){
+      answer += 1;
+    }else{
+      answer += 0;
+    }
+  }
+
+  return console.log(answer);
+}
+
+
+muss([199, 120, 150], 100)
