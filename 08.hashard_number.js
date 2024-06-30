@@ -25,13 +25,28 @@ console.log(hashard(18));
 const phoning = (phone) => {
     
   // 번호 뒷 4자리 판별
-  let phone4 = phone.substr(-4, 5);
+  let phone4 = phone.substring(phone.length - 4);
   console.log(phone4);
 
   // 뒷 4자리 제외한 앞 숫자 전부 가져오기
   let frontNum = phone.substring(0, phone.length - 4);
   console.log(frontNum);
 
+  // 앞 숫자 전부 *로 대체하기
+  let result = frontNum.replace(/[0-9]/g, '*');
+  console.log(result);
+
+  let answer = result + phone4;
+
+  return console.log(answer);
+
 };
 
-phoning('2323665555');
+phoning('123456789');
+
+
+// substr()은 폐기된 함수라 사용하지 않을것을 권장함
+// 이건 다른 사람이 한건데 짧게 가능
+// function hide_numbers(s){
+// return s.replace(/\d(?=\d{4})/g, "*");
+// }
