@@ -69,3 +69,16 @@ function umyang(ab, sign){
 }
 
 umyang([1,2,3,4], [true,false,true,true]);
+
+
+function ageNum(age){
+  let thisYear = new Date().getFullYear();
+  
+  console.log(thisYear);
+
+  let answer = (thisYear - age) - 1;
+  console.log(answer);
+  return answer;
+}
+
+ageNum(28);
