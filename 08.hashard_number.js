@@ -50,3 +50,22 @@ phoning('123456789');
 // function hide_numbers(s){
 // return s.replace(/\d(?=\d{4})/g, "*");
 // }
+
+// 음양 더하기
+
+function umyang(ab, sign){
+  let answer = 0;
+  console.log('ab >>', ab);
+  console.log('sign >>', sign);
+
+  for(i = 0; i < sign.length; i++){
+    if(sign[i] === true){
+      answer += ab[i];
+    } else{
+      answer += ab[i] * -1;
+    }
+  } 
+  return console.log(answer);
+}
+
+umyang([1,2,3,4], [true,false,true,true]);
