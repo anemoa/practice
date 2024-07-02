@@ -23,8 +23,82 @@ console.log(hashard(18));
 
 
 const phoning = (phone) => {
-    let answer = '';
+    
+  // 번호 뒷 4자리 판별
+  let phone4 = phone.substring(phone.length - 4);
+  console.log(phone4);
+
+  // 뒷 4자리 제외한 앞 숫자 전부 가져오기
+  let frontNum = phone.substring(0, phone.length - 4);
+  console.log(frontNum);
+
+  // 앞 숫자 전부 *로 대체하기
+  let result = frontNum.replace(/[0-9]/g, '*');
+  console.log(result);
+
+  let answer = result + phone4;
+
+  return console.log(answer);
 
 };
 
-console.log(phoning(222223333));
+phoning('123456789');
+
+
+// substr()은 폐기된 함수라 사용하지 않을것을 권장함
+// 이건 다른 사람이 한건데 짧게 가능
+// function hide_numbers(s){
+// return s.replace(/\d(?=\d{4})/g, "*");
+// }
+
+// 음양 더하기
+
+function umyang(ab, sign){
+  let answer = 0;
+  console.log('ab >>', ab);
+  console.log('sign >>', sign);
+
+  for(i = 0; i < sign.length; i++){
+    if(sign[i] === true){
+      answer += ab[i];
+    } else{
+      answer += ab[i] * -1;
+    }
+  } 
+  return console.log(answer);
+}
+
+umyang([1,2,3,4], [true,false,true,true]);
+
+
+function ageNum(age){
+  let thisYear = new Date().getFullYear();
+  
+  console.log(thisYear);
+
+  let answer = (thisYear - age) - 1;
+  console.log(answer);
+  return answer;
+}
+
+ageNum(28);
+
+// 머쓱이보다 키 큰 사람 구하기
+
+function muss(array, height){
+  let answer = 0;
+  console.log(array.length);
+
+  for(i = 0; i < array.length; i++){
+    if( array[i] > height){
+      answer += 1;
+    }else{
+      answer += 0;
+    }
+  }
+
+  return console.log(answer);
+}
+
+
+muss([199, 120, 150], 100)
