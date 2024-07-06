@@ -42,7 +42,7 @@ const phoning = (phone) => {
 
 };
 
-phoning('123456789');
+//phoning('123456789');
 
 
 // substr()은 폐기된 함수라 사용하지 않을것을 권장함
@@ -68,7 +68,7 @@ function umyang(ab, sign){
   return console.log(answer);
 }
 
-umyang([1,2,3,4], [true,false,true,true]);
+//umyang([1,2,3,4], [true,false,true,true]);
 
 
 function ageNum(age){
@@ -81,7 +81,7 @@ function ageNum(age){
   return answer;
 }
 
-ageNum(28);
+//ageNum(28);
 
 // 머쓱이보다 키 큰 사람 구하기
 
@@ -101,4 +101,4 @@ function muss(array, height){
 }
 
 
-muss([199, 120, 150], 100)
+//muss([199, 120, 150], 100)
