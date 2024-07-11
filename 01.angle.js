@@ -53,3 +53,22 @@ function tri(sides){
 console.log(tri([199, 72, 222]));
 
 // arr.sort((a,b) => a - b); => sort 메소드를 사용할 때 오름차순으로 하려면 이렇게 정의하면 된다
+
+
+// 중복된 숫자 개수
+
+
+function jungbok(array, n){
+    let answer = [];
+    
+    for(i = 0; i < array.length; i++){
+        if(array[i] === n){
+            answer.push(array[i]);
+        }
+    }
+
+    return answer.length;
+    
+}
+
+console.log(jungbok([1,1,1,3,2,2], 1));
