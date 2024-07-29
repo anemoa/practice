@@ -64,3 +64,16 @@ function daneoh(s) {
 // 의 과정을 거쳐서 정답이 완성된다. 과정중 '' 의 타입은 String 이다.
 
 console.log(daneoh('123zero'));
+
+
+// 같은 숫자는 싫어!
+function nosame(arr){
+  const newArr = []
+  
+  for(i=0; i<arr.length; i++){
+      if(arr[i]!==arr[i+1]){
+          newArr.push(arr[i])
+      }
+  }
+  return newArr
+}
