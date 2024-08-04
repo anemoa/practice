@@ -64,3 +64,13 @@ function daneoh(s) {
 // 의 과정을 거쳐서 정답이 완성된다. 과정중 '' 의 타입은 String 이다.
 
 console.log(daneoh('123zero'));
+
+
+// 배열 뒤집기
+
+function bae(num_list) {
+  const answer = num_list.revers();
+  return answer;
+}
+
+bae([1,2,3,4]);
