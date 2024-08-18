@@ -33,12 +33,27 @@ console.log(gangyuk(3, 4));
 
 
 
-process.stdin.setEncoding('utf8');
-process.stdin.on('data', data => {
-    const n = data.split(" ");
-    const a = Number(n[0]), b = Number(n[1]);
-    const row = '*'.repeat(a) // 가로별의 개수를 row라는 변수에 담음
-    for(let i =0; i < b; i++){ // 세로별의 개수 반복
-        console.log(row) //출력
-    }
-});
+// process.stdin.setEncoding('utf8');
+// process.stdin.on('data', data => {
+//     const n = data.split(" ");
+//     const a = Number(n[0]), b = Number(n[1]);
+//     const row = '*'.repeat(a) // 가로별의 개수를 row라는 변수에 담음
+//     for(let i =0; i < b; i++){ // 세로별의 개수 반복
+//         console.log(row) //출력
+//     }
+// });
+
+
+function nanum(arr){
+  let answer = 0;
+  let sum = 0;
+  
+  for(i = 0; i < arr.length; i++){
+    sum += arr[i];
+  }
+
+  return answer = sum / arr.length;
+  
+}
+
+console.log(nanum([6,6,6]));
