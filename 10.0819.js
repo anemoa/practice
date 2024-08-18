@@ -16,3 +16,19 @@ console.log(jungsoo(144));
 
 // Math.sqrt(x) : 숫자 x의 제곱근을 반환한다. ex) Math.sqrt(9) = 3
 // Math.pow(base, exponent) : base에 exponent를 제곱한 값을 반환한다. ex) Math.pow(2, 3) = 8
+
+
+
+function gangyuk(x, n){
+  let answer = [];
+
+  for(i = 1; i <= n; i++){
+    answer.push(x*i);
+  }
+  return answer;
+}
+
+
+console.log(gangyuk(3, 4));
+
+
