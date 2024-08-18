@@ -57,3 +57,13 @@ function nanum(arr){
 }
 
 console.log(nanum([6,6,6]));
+
+
+function soo(s){
+  let num = parseInt(s);
+
+  console.log(num);
+  
+}
+
+soo('+1234');
