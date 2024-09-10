@@ -67,3 +67,14 @@ function soo(s){
 }
 
 soo('+1234');
+
+
+// 양꼬치
+
+function yang(n, k){
+  let free = parseInt(n/10);
+  return n*12000 + (k - free) *2000;
+
+}
+
+console.log(yang(64, 6));
