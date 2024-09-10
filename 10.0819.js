@@ -78,3 +78,28 @@ function yang(n, k){
 }
 
 console.log(yang(64, 6));
+
+// 짝수 홀수 개수
+
+// function holjjak(list){
+//   console.log(list);
+//   let hols = list.filter( (value) =>  value % 2 === 0);
+//   let jjaks = list.filter( (value) => value % 2 === 1 );
+
+//   console.log(jjaks.length);
+// }
+
+function holjjak(num_list){
+  let answer = [];
+    
+  let hols = num_list.filter( (ele) => ele % 2 === 0);
+  let jjaks = num_list.filter( (ele) => ele % 2 === 1);
+  
+  answer.push(hols.length);
+  answer.push(jjaks.length);
+
+  
+  return console.log(answer);
+}
+
+holjjak([1,1,2,3,4])
