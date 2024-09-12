@@ -113,4 +113,21 @@ function pizza(n){
   return answer;
 }
 
-pizza(5)
+pizza(5);
+
+
+// 옷가게 할인 받기
+
+function osprice(n){
+  if(100000 <= n && n < 300000){
+    return Math.floor(price * 0.95)
+  } else if(300000 <= n && n < 500000){
+    return Math.floor(n * 0.9)
+  } else if(500000 <= n){
+    return Math.floor(n * 0.8)
+  } else{
+      return n
+  }
+}
+
+console.log(osprice(580000));
