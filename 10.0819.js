@@ -102,4 +102,15 @@ function holjjak(num_list){
   return console.log(answer);
 }
 
-holjjak([1,1,2,3,4])
+holjjak([1,1,2,3,4]);
+
+
+// 피자 나눠 먹기 (1)
+
+function pizza(n){
+  let result = n / 7;
+  let answer = Math.ceil(result);
+  return answer;
+}
+
+pizza(5)
