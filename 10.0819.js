@@ -131,3 +131,16 @@ function osprice(n){
 }
 
 console.log(osprice(580000));
+
+
+// 세균 증식
+
+function segyun(n, t){
+  let dap = n;
+  for(i = 0; i < t; i++) {
+    dap *= 2;
+  }
+  return dap;
+}
+
+console.log(segyun(2, 10));
