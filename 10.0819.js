@@ -144,3 +144,14 @@ function segyun(n, t){
 }
 
 console.log(segyun(2, 10));
+
+
+// 중앙값 구하기
+
+function middleRes(array) {
+  array.sort( (a, b) => a - b );
+  let len = array.length;
+  let middle = Math.floor( len / 2);
+  
+  return array[middle];
+}
