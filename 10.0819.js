@@ -155,3 +155,18 @@ function middleRes(array) {
   
   return array[middle];
 }
+
+
+// 자릿수 더하기
+
+function jarisoo(n){
+
+  let str = String(n);
+  let words = str.split('');
+  let answer = words.reduce((acc, word) => acc + parseInt(word), 0);
+
+  return answer;
+}
+
+
+console.log(jarisoo(1123));
