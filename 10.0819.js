@@ -168,5 +168,11 @@ function jarisoo(n){
   return answer;
 }
 
-
 console.log(jarisoo(1123));
+
+
+// 문자 반복 출력하기
+
+function banbok(str, n){
+  str.split('').map(char => char.repeat(n)).join('');
+}
