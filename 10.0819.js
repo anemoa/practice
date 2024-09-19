@@ -176,3 +176,18 @@ console.log(jarisoo(1123));
 function banbok(str, n){
   return str.split('').map(char => char.repeat(n)).join('');
 }
+
+
+// 최댓값 만들기 1
+
+function choi(num){
+
+  console.log(num);
+
+  let arr = num.sort( (a,b) => b - a);
+  console.log(arr);
+  return arr[0] * arr[1];
+}
+
+
+choi([9,2,4,3,11]);
