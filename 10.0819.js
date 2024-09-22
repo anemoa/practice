@@ -191,3 +191,13 @@ function choi(num){
 
 
 choi([9,2,4,3,11]);
+
+
+// 아이스 아메리카노
+
+function ameri(money){
+
+  return [Math.floor(money / 5500), money % 5500];
+}
+
+console.log(ameri(7000));
