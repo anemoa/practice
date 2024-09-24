@@ -201,3 +201,20 @@ function ameri(money){
 }
 
 console.log(ameri(7000));
+
+// 숨어있는 숫자의 덧셈 (1)
+
+function hideNum(str){
+    const num = str.split("");
+    let result = 0;
+
+    for(i = 0; i < num.length; i++){
+        if(Number(num[i])){
+          result += Number(num[i]);
+        }
+    }
+
+    return result;
+}
+
+console.log(hideNum("54egsgsdg33"))
