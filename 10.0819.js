@@ -218,3 +218,19 @@ function hideNum(str){
 }
 
 console.log(hideNum("54egsgsdg33"))
+
+// 대문자와 소문자
+function daemoonja(str){
+    let answer = [];
+    for(i = 0; i < str.length; i++){
+        if(str[i] === str[i].toLowerCase()){
+            answer.push(str[i].toUpperCase());
+        }else{
+          answer.push(str[i].toLowerCase());
+        }
+    }
+
+    return answer.join("");
+}
+
+console.log(daemoonja('aacCCd'));
